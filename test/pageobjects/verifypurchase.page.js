@@ -24,9 +24,13 @@ class VerifyAPurchase extends Page {
 			return $('[href="https://magento.softwaretestingboard.com/sales/order/view/order_id/4855/"]');
 	  }
 
+      get OrderNumber () {
+        return $('.page-title');
+    }
 
 
-    //This is to add an item to the cart
+
+    //This is to verify a purchase
     //  */
     async verify (dropDown, Account, ) {
         await this.dropDown.isDisplayed(dropDown);
