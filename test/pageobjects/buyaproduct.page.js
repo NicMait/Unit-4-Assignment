@@ -17,20 +17,21 @@ class BuyAProduct extends Page {
       return $('#top-cart-btn-checkout');
    }
 
-   //  get inputEmail () {
-   //      return $('#username');
-   //  }
+    get inputEmail () {
+        return $('#username');
+    }
 
    get pageHeader () {
       return $('li[id="shipping"] div[class="step-title"]')
    }
 
-   //  get inputFirstName () {
-   //      return $('input[name="firstname"]')
-   //  }
+    get inputFirstName () {
+        return $('input[name="firstname"]')
+    }
 
-   //  get inputLastName () {
-   //      return $('#FK2OQWM')
+    get inputLastName () {
+        return $('#FK2OQWM')
+    }
 
    // //  get inputCompany () {
    // //      return $('button[title="Add To Cart"]');
@@ -93,16 +94,16 @@ class BuyAProduct extends Page {
       return $('.base')
 		}
 
-      get btnNext2() {
-         return $('.button.action.continue.primary')
-         }
+      // get btnNext2() {
+      //    return $('.button.action.continue.primary')
+
 
 
 
 
     //This is to add an item to the cart
     //  */
-    async buy(streetAddress, streetAddressOne, streetAddressTwo, city, number, zipCode) {
+    async buy (streetAddress, streetAddressOne, streetAddressTwo, city, number, zipCode) {
         await this.inputStreetAddress.setValue(streetAddress);
         await this.inputStreetAddressOne.setValue(streetAddressOne);
         await this.inputStreetAddressTwo.setValue(streetAddressTwo);
@@ -118,14 +119,8 @@ class BuyAProduct extends Page {
         await this.btnPlaceOrder.click();
         await this.orderConfirmation.waitForDisplayed();
 
-
-
     }
 
-   //  async proceed () {
-   //    await this.selectShipping.click();
-   //    await this.btnNext2.click();
-   //  }
 
 
     /**
@@ -135,5 +130,6 @@ class BuyAProduct extends Page {
    return super.open('checkout/#shipping');
     }
 
-   }
+}
+
 module.exports = new BuyAProduct();
