@@ -9,7 +9,7 @@
     "AddAProductToCart": "npx kill-port 4444 && npx wdio run wdio.conf.js --spec ./test/specs/AddToCart.e2e.js",
     "PurchaseAProduct": "npx kill-port 4444 && npx wdio run wdio.conf.js --spec ./test/specs/BuyAProduct.e2e.js",
     "VerifyAPurchase": "npx kill-port 4444 && npx wdio run wdio.conf.js --spec ./test/specs/VerifyPurchase.e2e.js",
-    "UnhappyPath": "npx kill-port 4444 && npx wdio run wdio.conf.js --spec ./test/specs/login.e2e.js",
+    "UnhappyPath": "npx kill-port 4444 && npx wdio run wdio.conf.js --spec ./test/specs/SignUp.e2e.js",
     "DataDriven": "npx kill-port 4444 && npx wdio run wdio.conf.js --spec ./test/specs/DataDriven.js"
 
 

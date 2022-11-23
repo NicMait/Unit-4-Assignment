@@ -40,21 +40,16 @@ describe.only('Purchase A Product', () => {
 
 
 
-		// await expect(BuyAProduct.selectShipping).waitForClickable();
-		// await BuyAProduct.selectShipping.click();
-		await BuyAProduct.btnNext.waitForClickable();
+		await (BuyAProduct.selectShipping).waitForClickable();
+		await BuyAProduct.selectShipping.click();
+		await (BuyAProduct.btnNext).waitForClickable();
     await BuyAProduct.btnNext.click();
 		await BuyAProduct.btnPlaceOrder.waitForClickable();
 		await BuyAProduct.btnPlaceOrder.click();
 
 
-		// // // 		// User does not have a default address
 
-    // // } else{
-		// // 			await BuyAProduct.buy('1234', 'Sarno Road', 'Korea Town','Melbourne','597-643-5484', '33313');
-		// // // 		}
-
-			});
+				});
 
 
 

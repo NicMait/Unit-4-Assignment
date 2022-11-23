@@ -5,11 +5,6 @@ const WelcomePage = require('../pageobjects/welcome.page');
 // add a product to the cart
 
 describe('Add to Cart', () => {
-// 	it('should create a new account', async () => {
-// 		await Create.open();
-// 		await Create.account('Link', 'Neal', 'utestnicolem@gmail.com', 'Password123!', 'Password123!');
-
-// });
 
 	it('should add an item to the cart', async () => {
 

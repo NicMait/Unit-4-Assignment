@@ -29,7 +29,17 @@ class CreateAccountPage extends Page {
 
 		get btnSubmit () {
 			return $('button[title="Create an Account"]');
-}
+    }
+
+    get success() {
+        return $('div[role="alert"]');
+     }
+
+    get error() {
+        return $('.message-error.error.message');
+     }
+
+
     /**
      * a method to encapsule automation code to interact with the page
      * e.g. to login using username and password
